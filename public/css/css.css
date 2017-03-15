@@ -1,0 +1,42 @@
+
+    #tabs{
+         background-color: #C0C0C0;
+    }
+    
+    #mid{
+         background-color: #D3D3D3;
+    }
+
+    
+    table tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+    
+    table tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    header {
+        text-align: center;
+        background-color: blue;
+        color: green
+    }
+    
+    #head1 {
+        text-align: center;
+    }
+    
+     #head {
+        text-align: center;
+        font-weight: bold;
+        font-family: inherit;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    a{
+         border: 1px solid pink;
+        padding: 3px;
+    }

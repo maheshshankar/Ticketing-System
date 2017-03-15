@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <h3 id="head">Change Ticket Status to Closed</h3>
+        <form ng-hide="status.responseData" ng-submit="changeStatusToClosed()">
+            <input type="text" class="form-control" ng-model="status.name" placeholder="enter customer name">
+            <br/>
+            <button class="btn btn-primary form-control">Change</button>
+        </form>
+        <div>{{status.responseData}}</div>
+    </div>
+</div>

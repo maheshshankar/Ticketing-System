@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="ticketController">
+    <div class="container-fluid">
+        <div class="row">
+            <div id = "tabs" class="col-md-12">
+                <ul class="nav nav-tabs">
+                <li>
+                    <a href="#!/">HOME</a>
+                </li>
+                    <li>
+                        <a href="#!ticket">LOG THE TICKET</a>
+                    </li>
+                    <li>
+                        <a href="#!addcomplaint">ADD NEW COMPLAINT</a>
+                    </li>
+                    <li>
+                        <a href="#!assignuser">ASSIGN AN USER</a>
+                    </li>
+                    <li>
+                        <a href="#!addcomment">ADD COMMENT</a>
+                    </li>
+                    <li>
+                        <a href="#!changestate">CHANGE STATUS TO CLOSED </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div ng-view></div>
+    </div>
+</body>
+
+</html>

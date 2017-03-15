@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+    <h3 id = "head">Assign User to the Ticket</h3>
+        <form ng-hide="assign.responseData" ng-submit="assignUser()">
+            <input type="text" class="form-control" ng-model="assign.name" placeholder="Enter the customer name to assign user">
+            <select class="form-control" ng-model="assign.user" ng-init="assign.user = 'user0'">
+                <option value="user0">---Please Select User---</option>
+                <option value="user1">user1</option>
+                <option value="user2">user2</option>
+                <option value="user3">user3</option>
+                <option value="user4">user4</option>
+                <option value="user5">user5</option>
+                <option value="user6">user6</option>
+                <option value="user7">user7</option>
+                <option value="user4">user8</option>
+                <option value="user9">user9</option>
+            </select><br/>
+            <button class="btn btn-primary form-control">Assign</button>
+        </form>
+
+        <div>{{assign.responseData}}</div>
+    </div>
+</div>

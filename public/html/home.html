@@ -1,0 +1,38 @@
+<div class="row">
+    <div id = "mid" class="col-md-12">
+            <h2 id = "head1"><B>AREA:</B> Network Provider Services </h2>
+            <h3 id = "head1"><b>List Of Tickets</b></h3>
+        <table class="table table-responsive table-hover">
+            
+            <tr>
+                <th>Id</th>
+                <th>Customer_Name</th>
+                <th>Complaint</th>
+                <th>Comments</th>
+                <th>Created_By</th>
+                <th>Assigned_To</th>
+                <th>Status</th>
+            </tr>
+            <tr ng-repeat="ticket in tickets">
+                <td>{{ ticket._id }}</td>
+                <td>{{ ticket.customer_name }}</td>
+                <td>{{ ticket.complaint }}</td>
+                <td>{{ ticket.comments }}</td>
+                <td>{{ ticket.created_By }}</td>
+                <td>{{ ticket.assigned_To }}</td>
+                <td>{{ ticket.status }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-primary" ng-click="myFunc()">Click to show Tickets-Reports</button>
+        <div ng-show="showTicket">
+            <h5>total number of tickets : {{count.ticket}} </h5>
+            <h5>total number of tickets in new state : {{count.new}}</h5>
+            <h5>total number of tickets in open state : {{count.open}}</h5>
+            <h5>total number of tickets in closed state : {{count.closed}}</h5>
+        </div>
+    </div>
+</div>
